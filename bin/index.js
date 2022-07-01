@@ -5,7 +5,9 @@ const runCommand = (command) => {
   try {
     execSync(`${command}`, { stdio: "inherit" });
   } catch (error) {
+    console.log();
     console.error(`Failed to execute ${command}, ${error}`);
+    console.log();
 
     return false;
   }
@@ -16,6 +18,7 @@ const runCommand = (command) => {
 const repositoryName = process.argv[2];
 
 if (!repositoryName) {
+  console.log();
   console.error('Please specify the project directory:');
   console.log(
     `  clean-typography-template '<project-directory>'`
@@ -25,6 +28,7 @@ if (!repositoryName) {
   console.log(
     `  clean-typography-template 'my-app'`
   );
+  console.log();
   process.exit(1);
 }
 
@@ -47,7 +51,9 @@ if (!installedDeps) {
   process.exit(1);
 }
 
+console.log();
 console.log("Success! Follow the following commands to start:")
-console.log(`cd ${repoName} && npm start`);
+console.log(`cd ${repositoryName} && npm start`);
+console.log();
 
 process.exit(0);

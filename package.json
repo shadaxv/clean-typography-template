@@ -1,0 +1,32 @@
+{
+  "name": "clean-typography-template",
+  "version": "1.0.0",
+  "browserslist": [
+    "defaults"
+  ],
+  "description": "Minimalist CSS base typography",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --base=./",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadaxv/clean-typography-template.git"
+  },
+  "author": "Aleksander Niedzwiedz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadaxv/clean-typography-template/issues"
+  },
+  "homepage": "https://github.com/shadaxv/clean-typography-template#readme",
+  "bin": {
+    "clean-typography-template": "bin/index.js"
+  },
+  "devDependencies": {
+    "open-props": "^1.4.0",
+    "postcss-jit-props": "^1.0.7",
+    "postcss-preset-env": "^7.7.2",
+    "vite": "^2.9.13"
+  }
+}

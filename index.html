@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <script src="./scripts/theme-toggle.js" type="module"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body>
+    <header class="sticky-top">
+      <div>
+        <p>Title - Subtitle</p>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark"
+          aria-label="auto"
+          aria-live="polite"
+        >
+          <svg
+            class="sun-and-moon"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" width="100%" height="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+            <circle
+              class="sun"
+              cx="12"
+              cy="12"
+              r="6"
+              mask="url(#moon-mask)"
+              fill="currentColor"
+            />
+            <g class="sun-beams" stroke="currentColor">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Title</h1>
+        <h2>Subtitle</h2>
+      </section>
+
+      <section class="fixed">
+        <h3>Table of Contents</h3>
+        <ol>
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#other">Other</a></li>
+          <li><a href="#example-article">Example article</a></li>
+          <li><a href="#brand-color-picker">Brand color picker</a></li>
+        </ol>
+      </section>
+
+      <section id="headings" title="Headings">
+        <h2 class="counter">Headings</h2>
+
+        <h1>Heading 1.</h1>
+        <h2>Heading 2.</h2>
+        <h3>Heading 3.</h3>
+        <h4>Heading 4.</h4>
+        <h5>Heading 5.</h5>
+        <h6>Heading 6.</h6>
+      </section>
+
+      <section id="lists" title="Lists">
+        <h2 class="counter">Lists</h2>
+
+        <section>
+          <h3>Unordered list</h3>
+          <ul>
+            <li>re-breathing value?</li>
+            <li>Boromir's thing value? Fisherman thinks Gollum's stove call</li>
+            <li>
+              Boromir's destroy perils Bilbo Baggins regain seems! g value?
+              Fisherman thinks Gollum's stove call
+            </li>
+            <li>value? Fisherman thinks Gollum's stove call</li>
+            <li>
+              Wider Treebeard quietly faced hesitate fire-breathing value?
+              Fisherman thinks Gollum's stove call
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Ordered list</h3>
+          <ol>
+            <li>re-breathing value?</li>
+            <li>Boromir's thing value? Fisherman thinks Gollum's stove call</li>
+            <li>
+              Boromir's destroy perils Bilbo Baggins regain seems! g value?
+              Fisherman thinks Gollum's stove call
+            </li>
+            <li>value? Fisherman thinks Gollum's stove call</li>
+            <li>
+              Wider Treebeard quietly faced hesitate fire-breathing value?
+              Fisherman thinks Gollum's stove call
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Description list</h3>
+          <dl>
+            <dt>Horror</dt>
+            <dd>
+              Boromir's destroy perils Bilbo Baggins regain seems! Wider
+              Treebeard quietly faced hesitate fire-breathing value? Fisherman
+              thinks Gollum's stove call
+            </dd>
+            <dd>LOTR</dd>
+
+            <dt>Comedy</dt>
+            <dd>
+              Boromir's destroy perils Bilbo Baggins regain seems! Wider
+              Treebeard quietly faced hesitate fire-breathing value? Fisherman
+              thinks Gollum's stove call
+            </dd>
+            <dd>
+              Boromir's destroy perils Bilbo Baggins regain seems! Wider
+              Treebeard quietly faced hesitate fire-breathing value? Fisherman
+              thinks Gollum's stove call
+            </dd>
+            <dd>Movie 3</dd>
+            <dd>Movie 4</dd>
+          </dl>
+        </section>
+      </section>
+
+      <section id="other" title="Other">
+        <h2 class="counter">Other</h2>
+
+        <section>
+          <small>I'm a small</small>
+          <p>Text <sup>superscript</sup><sub>subscript</sub></p>
+        </section>
+
+        <p>
+          <code>Code element</code>
+        </p>
+
+        <section>
+          <p>
+            European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
+            Cutlassfish porbeagle <a href="#">shark</a> ricefish walking catfish
+            glassfish Black swallower.
+          </p>
+        </section>
+
+        <div>
+          <button>Submit</button>
+          <a href="#">Link to somewhere</a>
+        </div>
+
+        <fieldset>
+          <legend>Fieldset</legend>
+          <p>
+            European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
+          </p>
+          <p>
+            Cutlassfish porbeagle <a href="#">shark</a> ricefish walking catfish
+            glassfish Black swallower.
+          </p>
+          <input />
+          <button>Submit</button>
+        </fieldset>
+
+        <hr />
+
+        <details>
+          <summary>Read More</summary>
+          <p>
+            European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
+            Cutlassfish porbeagle <a href="#">shark</a> ricefish walking catfish
+            glassfish Black swallower.
+          </p>
+        </details>
+
+        <figure>
+          <img
+            src="https://source.unsplash.com/random/400x400/?animal"
+            alt="This is an animal."
+          />
+          <figcaption>This is an animal.</figcaption>
+        </figure>
+
+        <blockquote>
+          <p>
+            <q
+              >Nunc <s>varius sapien leo</s>,
+              <mark>ut malesuada nibh</mark> volutpat nec.
+              <u>Curabitur in facilisis sem</u>, in convallis metus.
+              <strong>Nunc ipsum lorem</strong>, accumsan vel sagittis at, porta
+              ut dolor.</q
+            >
+          </p>
+          <footer>- <cite>lorem ipsum</cite></footer>
+        </blockquote>
+      </section>
+
+      <section id="example-article" title="Example article">
+        <h2 class="counter">Example article</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          accumsan volutpat pellentesque. Vivamus eu dolor sed lorem lobortis
+          ultrices. Curabitur nec venenatis quam, ac tincidunt neque. Quisque et
+          dui quis dolor euismod bibendum id at mi. Ut eget justo et orci semper
+          tincidunt. Sed ut felis vel velit laoreet pharetra sed semper massa.
+          Suspendisse diam est, posuere eget rutrum vel, elementum et elit. Cras
+          dapibus cursus nibh, sed volutpat tellus. Nullam tortor dolor,
+          ullamcorper ut mattis eu, fringilla id velit. Donec pellentesque dolor
+          massa, bibendum congue eros pretium eleifend. Integer quam purus,
+          condimentum volutpat lectus vel, faucibus aliquet nisi. Integer libero
+          erat, lobortis vel ullamcorper quis, fermentum fringilla magna. Nullam
+          cursus at sem sed venenatis. Curabitur in sem ut arcu mattis imperdiet
+          et dignissim neque. Proin scelerisque nulla lorem, eget tristique nibh
+          porta eget. Phasellus eu tincidunt turpis, et varius mauris.
+        </p>
+
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+            in?
+          </li>
+          <li>
+            Doloremque voluptatum nesciunt, sunt fugit suscipit neque totam
+            blanditiis facere!
+          </li>
+          <li>
+            Molestiae id beatae perspiciatis, doloremque quo possimus quaerat
+            saepe nulla.
+          </li>
+          <li>
+            Fugit deleniti ipsa consequuntur consequatur, corrupti numquam
+            optio! Minus, sint!
+          </li>
+          <li>
+            Voluptatibus voluptatem possimus vero consequatur reprehenderit
+            sequi, eligendi eaque! In.
+          </li>
+        </ul>
+        <h3>Some subtitle</h3>
+        <p>
+          Mauris in sem urna. Proin eu nulla ac orci tincidunt vehicula quis
+          eget dolor. Integer a auctor ex. Mauris interdum sed massa at
+          vulputate. Quisque vel aliquet lacus. Suspendisse in elementum libero.
+          Etiam quis orci eget sem malesuada pellentesque. Donec a augue
+          hendrerit odio blandit lobortis ut quis purus. Vestibulum pulvinar
+          metus eu eros dictum bibendum. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Phasellus
+          suscipit, augue ut convallis finibus, ex massa volutpat nibh, vitae
+          mattis risus tellus eu erat. Etiam accumsan metus vel augue aliquet,
+          eu posuere ligula dapibus. Nulla euismod finibus mi a maximus. Integer
+          vehicula molestie enim vel malesuada.
+        </p>
+
+        <figure>
+          <img
+            src="https://source.unsplash.com/random/400x400/?nature"
+            alt="Random image."
+          />
+          <figcaption>Random image.</figcaption>
+        </figure>
+
+        <p>
+          Nunc varius sapien leo, ut malesuada nibh volutpat nec. Curabitur in
+          facilisis sem, in convallis metus. Nunc ipsum lorem, accumsan vel
+          sagittis at, porta ut dolor. Vivamus blandit nisl vitae leo maximus
+          hendrerit. Aliquam semper elementum mi nec fermentum. Mauris risus
+          libero, condimentum in faucibus eget, placerat ac tellus. Donec mi
+          diam, convallis id sem vitae, congue luctus enim.
+        </p>
+
+        <h3>Some subtitle</h3>
+        <blockquote>
+          <p>
+            <q
+              >Curabitur tempor ligula magna. Nulla eleifend arcu at sem aliquet
+              blandit. Quisque pharetra non lorem nec malesuada. Aenean vitae
+              felis et ex pulvinar fermentum. Proin id scelerisque risus. Etiam
+              luctus turpis mauris, eget finibus elit feugiat et. Proin
+              efficitur ipsum ac dui ultrices lobortis.</q
+            >
+          </p>
+        </blockquote>
+
+        <p>
+          Integer eget tortor orci. Ut non tortor aliquam, ultrices tellus nec,
+          lacinia urna. Sed et libero convallis, scelerisque eros nec, commodo
+          lorem. Aenean varius eros ut tincidunt faucibus. Curabitur tristique
+          enim eu eros sodales placerat. Ut malesuada feugiat elit vitae
+          sollicitudin. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Nulla eu leo massa.
+          <mark
+            >Proin aliquet felis vel massa eleifend, non laoreet dui fermentum.
+            Curabitur in maximus sapien. Morbi convallis ipsum a vestibulum
+            ultrices.</mark
+          >
+          Pellentesque vulputate eu ex sit amet bibendum. Aenean elit dui,
+          tristique a congue sed, accumsan at lacus. Sed vel sagittis nunc. Orci
+          varius natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus.
+        </p>
+      </section>
+
+      <section id="brand-color-picker" title="Brand color picker">
+        <h2 class="counter">Brand color picker</h2>
+        <fieldset>
+          <legend>Brand color picker</legend>
+          <input type="range" id="hue-slider" min="0" max="360" value="0" />
+          <p>Hue: <span id="hue-value"></span></p>
+          <p>
+            <a href="#">Link</a>
+            <input type="checkbox">
+            <input type="radio">
+            <input type="range">
+            <input type="text">
+            <button>Button</button>
+          </p>
+        </fieldset>
+      </section>
+    </main>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>

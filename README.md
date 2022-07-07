@@ -19,8 +19,21 @@ npm install - install all dependencies
 
 npm start - start a local development server
 
-npm build - build production-ready code
+npm run build - build production-ready code
 ```
+
+## Deploying on GitHub pages
+
+- Build a production version
+```bash
+npm run build
+```
+- Commit changes
+- Push update to `gh-pages` branch
+```bash
+git subtree push --prefix dist origin gh-pages
+```
+- On GitHub, go to project settings, then pages and select gh-pages as the source branch for deployment
 
 ## Contributing
 Pull requests are welcome.

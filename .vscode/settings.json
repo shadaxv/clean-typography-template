@@ -1,0 +1,9 @@
+{
+  "conventionalCommits.scopes": [
+    "readme",
+    "build",
+    "bin",
+    "init",
+    "template"
+  ]
+}
